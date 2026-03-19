@@ -2,7 +2,6 @@
 
 A Python project for downloading, analyzing, and visualizing historical stock data using Yahoo Finance.
 
-Built as a learning project — the code is kept simple and well-commented so it's easy to follow and extend.
 
 ---
 
@@ -38,35 +37,6 @@ stock-market-analysis/
 
 ---
 
-## Setup
-
-**1. Clone or download the project**
-
-```bash
-git clone <your-repo-url>
-cd stock-market-analysis
-```
-
-**2. Create and activate a virtual environment** *(recommended)*
-
-```bash
-python -m venv venv
-
-# macOS / Linux
-source venv/bin/activate
-
-# Windows
-venv\Scripts\activate
-```
-
-**3. Install dependencies**
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
 ## Running the project
 
 **Full pipeline (download + analyze + visualize):**
@@ -81,14 +51,6 @@ On first run this downloads data from Yahoo Finance and caches it to `data/`. Su
 
 ```bash
 python main.py --refresh
-```
-
-**Run individual modules directly:**
-
-```bash
-python data_sourcing.py   # download and save data only
-python analysis.py        # print stats only (needs saved CSVs)
-python visualization.py   # show charts only (needs saved CSVs)
 ```
 
 ---
@@ -158,4 +120,3 @@ Search for any company on [finance.yahoo.com](https://finance.yahoo.com) — the
 - Export a PDF report combining stats and charts
 - Add a moving average overlay to the price charts
 - Compare performance vs. the S&P 500 (`^GSPC`)
-- Build a simple Jupyter Notebook version for interactive exploration
